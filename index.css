@@ -1,0 +1,180 @@
+
+
+
+:root{
+    --primary-color: hsl(224, 76%, 48%);
+
+    --black:#101010;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: initial;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Manrope, 'sans-serif';
+    background: #FAF9F6;
+   font-size: 1.6rem;
+   height: 100vh;
+}
+
+h1{
+    color: var(--black);
+
+}
+li{
+    list-style: none;
+}
+
+.main{
+    width: 90%;
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+
+/**/
+.header{
+    text-align: center;
+    margin-top: 7.2rem;
+    margin-bottom: 6.4rem;
+}
+
+.header-title{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-title span{
+    display: block;
+}
+.header-title-sub{
+    color: var(--primary-color);
+}
+
+.header-description{
+    font-size: 2rem;
+}
+
+
+/*
+#
+#
+#
+#
+#
+*/
+
+.pricing-section{
+  
+}
+
+.pricing-box{
+    padding: 4rem  2.4rem;
+    background: lightblue;
+    border-radius: 20px;
+    max-width: 37.8rem;
+}
+
+.pricing-box > *{
+    width: 100%;
+}
+
+
+
+.pricing-box-title{
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    
+}
+
+.pricing-box-sub{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.pricing-price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.pricing-price-value{
+    font-size:4rem ;
+}
+.pricing-price-month{
+    font-size:1.6rem ;
+}
+
+button{
+    width: 90%;
+    background: transparent;
+    border: 1px var(--primary-color) solid;
+    border-radius: 5px;
+    padding: 1.2rem 0;
+    margin-bottom: 4rem;
+    color: var(--primary-color);
+
+}
+
+ul > *:not(:last-child){
+    margin-bottom: 1.2rem;
+}
+ul>*{
+    display: flex;
+    align-items: center;
+}
+
+/**************
+#
+#
+# Components
+#
+#
+**************/
+
+.circle{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    background-color: lightcoral;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+
+.circle::before{
+    content: "";
+    display: block;
+    background: blue;
+    height: 10px;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 20px;
+}
+
+.circle::after{
+    content: "";
+    display: block;
+    background: blue;
+    height: 5px;
+    width: 2px;
+    position: absolute;
+    right: 50%;
+    top: 50% ;
+    transform: translate(-160%, -25%) rotate(-46deg);
+    border-radius: 20px;
+    
+}
